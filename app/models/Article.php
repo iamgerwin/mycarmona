@@ -6,6 +6,6 @@ class Article extends \Eloquent {
 
 	public function tags()
 	{
-		return $this->belongsToMany('Tag');
+		return $this->belongsToMany('Tag','article_tag','article_id','tag_id');
 	}
 }

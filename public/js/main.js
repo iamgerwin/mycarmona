@@ -2,7 +2,7 @@
 
     $('form[data-remote]').on('submit', function(e) {
 
-        
+
         var form = $(this);
 
         var method = form.find('input[name="_method"]').val() || 'POST';
@@ -24,7 +24,7 @@
         e.preventDefault();
     });
 
-    $('input[data-confirm], button[data-confirm').on('click', function(e) {
+    $(input[data-confirm], button[data-confirm]).on('click', function(e) {
         var input = $(this);
 
         input.prop('disabled','disabled');

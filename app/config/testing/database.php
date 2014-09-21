@@ -2,16 +2,21 @@
 
 return array(
 
-	'default' => 'sqlite',
+	'default' => 'mysql',
 
 
 
 	'connections' => array(
 
-		'sqlite' => array(
-			'driver'   => 'sqlite',
-			'database' => ':memory:',
-			'prefix'   => '',
+        'mysql' => array(
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'mycarmona_DB',
+            'username'  => 'root',
+            'password'  => 'root',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
 		),
 
 

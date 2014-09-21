@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62e9b0a5-a1a9-41c8-aa0b-aa9dd07290dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/CctvPageController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Repo/DbArticleRepo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Repo/DbCctvRepo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/tests/DbCctvRepoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Repo/DbTagsRepo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Repo/DbUserRepo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/tests/ExampleTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Html/FormBuilder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Html/HtmlServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/tests/LoginControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Repo/Repository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Alas/Repo/RepositoryInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/TagPageController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dashboard/cctv/edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/full-page.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dashboard/article/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dashboard/cctv/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dashboard/article/indextag.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/johngerwindelasalas.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/macros.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/partials/main-nav.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/errors/missing.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mycarmona.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dashboard/page.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_23_030009_create_articles_types_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/00eafb5bd627f114dafd0c5bc9f0fddd.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/087017a83baf0c07a11e1e1559a95529.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/0943792bc8888772e7b665d91b46983f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/0a72a995e8b47feab41ca37bca744c3a.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/0ffd050cc754b7307b9a49b6f0cdbad3.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/10822e5b510fc2e59d6747338a844683.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/11b677392d4ba640252f5ecb35948f6d.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/13660164a993e4d491ed8d1143006678.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/14a814717181f77fef212c2c722432b2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/1fb9802b5f5c94445b345bd61fb90f03.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/2921104152608ecbb9e7a4b25899a94f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/2af9b72dc60a0005f7303595c7f0b4ee.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3116c534de493d12737c14394cb12f9c.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3519b65dac6dfa54474b4fcd29fe0aff.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3a7ee9602aa7ad48d8b1c77367278269.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3adb0790ff65b8950fb2d105f74d02fc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3b5515f7c371215b0844bb8d51b7905d.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3cf5361984eabace26e870e0f98f388e.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3d071d9d8597c800e7875ac05a686faa.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3e7ae99edfb3e7d9323b752904994b8f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/3f636bdbc37ab78312f192513f94f31c.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/44849f9db0c4e2f3bd095771ed9584a7.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/4650888e2d6526e633f64dbd1dd5f018.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/4771521a96e2d63f94d0d64833e0bc6d.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/4b045d7bd9a70b839b971107efc01999.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/4cc7e3cc1e682d710088e510951347b9.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/4dd10d792a6c4db20259c6885a6bb8de.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/4f82539321254aa446b9d875b39e0405.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/51706f0817a3b7b67913efe16f6b6941.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/517ce96cdaf3daf5ae0a234883390eb9.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/53a51a7661f723031e7473fa0028cbda.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/58d357deb7e6156b0554394511e614ad.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/5c647b6943f4d0efd0b1a0c00b40788f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/6110143d5437edf02c8c7c8a1e2ccf86.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/650ab4488a6402f9f8df923c20dad20b.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/688fce6e11d68878efffc1aeb56d5f61.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/6c01c18e57588b9e335b222e1808393a.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/6c9d26c14fb6feeeb810341669a2ff00.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/6e05cba6b8c550b02b8be036eb7c73dd.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7274cedf83ec0d5a9b0a5cbb1e148f34.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7311678140aa521042740141b33e1913.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/74d56620c9343d9e9c1bea0490bf4951.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7841c28da2b5b3e59fc6c3c3b9252d90.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7ae285d3138973118bbd232339b697af.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7ae3ac1a2dbb079631a61d2735beca84.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7b6d1a6eeb74f4c8fbbd89a04e2315c4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/7c48188046198d3728e1d335ba81ff24.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/86b23719311b0bbb4f8b662729f5ace0.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/882eecbe018591123ed6bcda8eb2e761.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/94059a91a570c43ac8abd8e2bf076cca.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/947b9b8f651fb039eec07fc2dfce4265.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/9c93e8259cbe82a3b3029a9bb6893d9f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/9deedc22dfa26b5ce4d6005117d23a81.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/9e06dd6eefb034761f0ec3944ca4f643.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/9fe043fd28d85b74723770b3774a43fa.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/9ff69a953c8307de7db0d0ff0f46e9d6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/a458c6c93db809aad8cc84c80e2a1fa7.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/abc0be3e0edad36e99fac3e14331ee01.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/b0ff9888fee27346b3740825ddb975d3.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/b4378faa333aa0baa4a716121b7d18a4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/b49e9242f5ac739d5e89cf9eb08c2eda.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/b81218729ac87da3ad7862ea76d9ec43.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/c0f939fcbd8307c7fe1a02539328546c.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/c1dac326cfdd66e829492e8d28909a41.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/c2410292bfbf7cb6ba82d46971676ce7.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/c570793518ac8a162a802c2800f26b08.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/c880e6aa8b2350a6cb8a9892482e270c.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/ccc9efee21259b193022ba4855ea2f6f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/cedd4702d56bf02ac697ab94df022616.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/d4ca166dfab00d112de0826cf75496cd.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/d747ddc527f92b3d2b73830d686211b5.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/ddee1abb8a3f36e94c3d832a4e8cfd8d.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/dee4a6d557ea826583f33f0bd4076392.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/e9949712cabce82b597e4655e9f92d00.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/eaa7d500244b28d17986a1c457a901ad.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/ecd3ce2828dac721021f26f44fb85ad0.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/f05d2f95d59ba32eb65d43363707aff8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/f673260c260d6f773aee717c6ca6c4b1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/fbf725ceb6ecf91758cba3002c648b71.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/fc8e25346d3753f6a55c919de8e40eeb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/fd13a4b7905a3d01e4b1031f85b1f1ae.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/fd824ab8a929f99500f37bfb43aeb0d2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/fda864ec25183f617908b4631f3d1f79.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/ff21dcbc6af2c4d5766f553dbc64043d.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/debugbar/ff6a0ef1b76cc00fa9c7150ef1a44212.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/ArticleTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/helpers/ApiTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/helpers/Factory.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Article.php" afterPath="$PROJECT_DIR$/app/models/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/app/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ArticlePageController.php" afterPath="$PROJECT_DIR$/app/controllers/ArticlePageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CctvController.php" afterPath="$PROJECT_DIR$/app/controllers/CctvController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/DashboardController.php" afterPath="$PROJECT_DIR$/app/controllers/DashboardController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LoginController.php" afterPath="$PROJECT_DIR$/app/controllers/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Tag.php" afterPath="$PROJECT_DIR$/app/models/Tag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/TagController.php" afterPath="$PROJECT_DIR$/app/controllers/TagController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Alas/Transformers/Transformer.php" afterPath="$PROJECT_DIR$/app/Alas/Transformers/Transformer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Alas/Validators/ValidationException.php" afterPath="$PROJECT_DIR$/app/Alas/Validators/ValidationException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/_flash.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/_flash.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/testing/database.php" afterPath="$PROJECT_DIR$/app/config/testing/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/login.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/master.blade.php" afterPath="$PROJECT_DIR$/app/views/master.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/navbar.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/navbar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+    </list>
+    <ignored path="mycarmona.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mycarmona" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1244" max-vertical-offset="2117">
+              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticlePageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ArticlePageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TagPageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/TagPageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="754">
+              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="e#41#135#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indextag.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dashboard/article/indextag.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1392">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding>
+                <marker date="1411281310000" expanded="true" signature="826:880" placeholder="..." />
+                <marker date="1411281310000" expanded="true" signature="838:878" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbUserRepo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbUserRepo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Repository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Alas/Repo/Repository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9095164" vertical-offset="1186" max-vertical-offset="2001">
+              <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dashboard/article/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="1537">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbArticleRepo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbArticleRepo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="1102">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbTagsRepo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbTagsRepo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="725">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/Alas/Validators/ValidationException.php" />
+        <option value="$PROJECT_DIR$/app/tests/ArticleTest.php" />
+        <option value="$PROJECT_DIR$/app/tests/ExampleTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/tests/LoginTest.php" />
+        <option value="$PROJECT_DIR$/app/config/testing/database.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/_flash.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/app/controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/full-page.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/partials/main-nav.blade.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Html/FormBuilder.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Html/HtmlServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
+        <option value="$PROJECT_DIR$/app/macros.php" />
+        <option value="$PROJECT_DIR$/app/controllers/FeedController.php" />
+        <option value="$PROJECT_DIR$/app/tests/LoginControllerTest.php" />
+        <option value="$PROJECT_DIR$/app/tests/DbCctvRepoTest.php" />
+        <option value="$PROJECT_DIR$/app/controllers/DashboardController.php" />
+        <option value="$PROJECT_DIR$/app/views/master.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/page.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/cctv/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/cctv/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/cctv/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/CctvPageController.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Repo/DbCctvRepo.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Transformers/CctvTransformer.php" />
+        <option value="$PROJECT_DIR$/app/models/Article.php" />
+        <option value="$PROJECT_DIR$/app/models/Tag.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Repo/DbArticleRepo.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Repo/DbTagsRepo.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ArticlePageController.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/article/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/errors/missing.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/TagPageController.php" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/article/indextag.blade.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Repo/DbUserRepo.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Repo/RepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Alas/Repo/Repository.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5.14" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1590" />
+    <option name="y" value="151" />
+    <option name="width" value="1280" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>BladeClosingSection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="errors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Transformers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycarmona" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="next occ&#9;ACTION&#9;NextOccurence&#10;next &#9;ACTION&#9;NextOccurence&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
+  </component>
+  <component name="RunManager" selected="PHPUnit.tests">
+    <configuration default="false" name="ExampleTest.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mycarmona/app/tests/ExampleTest.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCase.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/tests/TestCase.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExampleTest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/tests/ExampleTest.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ExampleTest" directory="$PROJECT_DIR$/app/tests" file="$PROJECT_DIR$/app/tests/ExampleTest.php" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ExampleTest.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.TestCase.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.ExampleTest.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.tests" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.tests" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.ExampleTest.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ExampleTest.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.TestCase.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62e9b0a5-a1a9-41c8-aa0b-aa9dd07290dd" name="Default" comment="" />
+      <created>1410960035755</created>
+      <option name="number" value="Default" />
+      <updated>1410960035755</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1590" y="151" width="1280" height="735" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2484375" sideWeight="0.49925926" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969216" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14464286" sideWeight="0.50074077" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1247" max-vertical-offset="3770">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="62" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/testing/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="725">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/ExampleTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="638">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6549" max-vertical-offset="15660">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/_flash.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="261">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77096117" vertical-offset="0" max-vertical-offset="1276">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65235174" vertical-offset="0" max-vertical-offset="978">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38548058" vertical-offset="0" max-vertical-offset="3422">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/HtmlServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.670922" vertical-offset="1354" max-vertical-offset="2059">
+          <caret line="62" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.564539" vertical-offset="3256" max-vertical-offset="5916">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/partials/main-nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041134752" vertical-offset="0" max-vertical-offset="705">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Html/HtmlServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0315933" vertical-offset="0" max-vertical-offset="2175">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Html/FormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39835164" vertical-offset="0" max-vertical-offset="728">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5492228" vertical-offset="1490" max-vertical-offset="2262">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="978">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/macros.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="772">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/cctv/new.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="772">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/full-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="319">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/DbCctvRepoTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41769546" vertical-offset="0" max-vertical-offset="486">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/LoginControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="1044">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1421">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CctvController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65821093" vertical-offset="1131" max-vertical-offset="3045">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="57" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41321245" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="812">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1421">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/cctv/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1653">
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CctvPageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3473581" vertical-offset="312" max-vertical-offset="1334">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/cctv/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26223093" vertical-offset="341" max-vertical-offset="1363">
+          <caret line="21" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10763209" vertical-offset="209" max-vertical-offset="1392">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbCctvRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36888453" vertical-offset="0" max-vertical-offset="1022">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Transformers/TagTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="749">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Transformers/CctvTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36888453" vertical-offset="0" max-vertical-offset="1022">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Transformers/Transformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="696">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027108435" vertical-offset="25821" max-vertical-offset="32509">
+          <caret line="823" column="23" selection-start-line="823" selection-start-column="23" selection-end-line="823" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-387.3554" vertical-offset="370826" max-vertical-offset="371490">
+          <caret line="3691" column="31" selection-start-line="3691" selection-start-column="31" selection-end-line="3691" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Cctv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26204818" vertical-offset="0" max-vertical-offset="664">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3493976" vertical-offset="0" max-vertical-offset="664">
+          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbTagsRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="725">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/errors/missing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67862713" vertical-offset="0" max-vertical-offset="783">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1244" max-vertical-offset="2117">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ArticlePageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/TagPageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="754">
+          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="e#41#135#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/article/indextag.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1392">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <marker date="1411281310000" expanded="true" signature="826:880" placeholder="..." />
+            <marker date="1411281310000" expanded="true" signature="838:878" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbArticleRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Repo/RepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5429017" vertical-offset="0" max-vertical-offset="641">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/article/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="1537">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Repo/DbUserRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Alas/Repo/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9095164" vertical-offset="1186" max-vertical-offset="2001">
+          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

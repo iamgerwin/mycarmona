@@ -1,4 +1,4 @@
 <div class="ui blue message flash hide">
-    
-    Yee
+    {{$errors->first('username')}}
+    {{$errors->first('password')}}
 </div>

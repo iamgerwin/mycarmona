@@ -10,36 +10,32 @@
 {{HTML::script('js/main.js')}}
 <script type="text/javascript">
 $('.form').transition({
-    animation : 'tada',
+    animation : 'tada'
   });
 </script>
 @stop
 
 @section('body')
-@include('pages._flash')
-<div class="ui three column grid form">
-  <div class="column">
-  </div>
-  <div class="column middle">
-    <div class="ui fluid form segment">
-      <h3 class="ui header"><i class="cloud icon"></i> myCarmona Web API</h3>
-      {{Form::open(['data-remote', 'data-remote-success-message' => 'checking credentials'])}}
-      <div class="field">
-        <label>Username</label>
-        <input name="username" placeholder="Username" type="text" />
-      </div>
-      <div class="field">
-        <label>Password</label>
-        <input name="password" placeholder="Password" type="password" />
-      </div>
 
-      {{Form::submit('Login',['class' => 'ui vertical animated blue button','data-confirm'=>'Are you sure?'])}}
+
+<div class="center-block">
+  <div class="panel panel-primary col-xs-6 col-sm-offset-3">
+      <div class="panel-heading">Login</div>
+      <div class="panel-body">
+      {{Form::open(['route' => 'login.store','class'=>'form-horizontal','role'=>'form'])}}
+
+        <div class="form-group">
+            {{ Form::label('username','Username:') }}
+            {{ Form::text('username',null,['placeholder'=>'Username','class'=>'form-control']) }}
+        </div>
+        <div class="form-group">
+            {{ Form::label('password','Password:') }}
+            {{ Form::password('password',['placeholder'=>'Password','class'=>'form-control']) }}
+        </div>
+      {{Form::submit('Login',['class' => 'btn btn-primary btn-lg btn-block'])}}
       
       {{Form::close()}}
-    </div>
-  </div>
-  <div class="column">
-  </div>
+      </div>
+   </div>
 </div>
-
 @stop

@@ -56,6 +56,9 @@ class CctvController extends ApiController {
 	public function show($id)
 	{
 		//
+		$cctv = Cctv::findOrFail($id);
+
+		return [$cctv];
 	}
 
 	/**

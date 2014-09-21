@@ -13,11 +13,15 @@
 
 Route::get('/', function()
 {
-	return Redirect::route('login.index');
+    if(Auth::guest())
+	    return Redirect::route('login.index');
+
+    return Redirect::route('dashboard.page');
 });
 
 
 Route::resource('login','LoginController');
+Route::get('logout',['as' => 'logout','uses' => 'LoginController@logout']);
 
 /**
 *	API routes
@@ -29,9 +33,8 @@ Route::group(['prefix'=>'api'], function() {
 
 	Route::group(['prefix'=>'v1'], function() {
 
-		Route::get('articles/{id}/tags','TagController@index');
+		Route::get('tags/{id}/articles','TagController@index');
 		Route::resource('articles', 'ArticleController');
-		Route::resource('tags','TagController');
 
 		Route::resource('cctvs', 'CctvController');
 
@@ -39,28 +42,33 @@ Route::group(['prefix'=>'api'], function() {
 
 });
 
-/**
-*	Autheticated user
-*
-*
-*/
-Route::group(['before' => ''], function(){
+
+Route::group(['before' => 'auth'], function(){
 
 	Route::get('dashboard', ['as'=>'dashboard.page', 'uses'=>'DashboardController@dashboardPage']);
-	Route::get('cctvs', ['as'=>'cctvs.page', 'uses'=>'DashboardController@cctvsPage']);
-	Route::get('article', ['as'=>'articles.page', 'uses'=>'DashboardController@articlesPage']);
 
-	Route::get('article/new', ['as'=>'new.article.page', 'uses'=>'DashboardController@newArticlePage']);
-	Route::get('cctv/new', ['as'=>'new.cctv.page', 'uses'=>'DashboardController@newCctvPage']);
 
-	Route::get('cctvs/{id}', ['as'=>'cctv.page', 'uses'=>'DashboardController@cctvPage']);
-	Route::get('article/{id}', ['as'=>'article.page', 'uses'=>'DashboardController@articlePage']);
+    Route::resource('cctvs','CctvPageController');
+    Route::resource('articles','ArticlePageController');
+    Route::resource('users','UserPageController');
+    Route::resource('tags','TagPageController');
+    Route::get('tag/{id}/articles',['as' => 'tag.articles', 'uses' => 'TagPageController@indexArticle']);
 
 });
 
 
 Route::get('/test', function()
 {
-	return Tag::with('articles')->get();
+    $art = new \Alas\Repo\DbArticleRepo(new Article());
+    $aa = $art->getTagsWithInArticleId(1);
+    foreach ($aa as $a) {
+        echo $a->name;
+    }
 });
 
+
+App::missing(function($exception)
+{
+            return Response::view('errors.missing', array(), 404);
+            //return Redirect::to('login');
+});

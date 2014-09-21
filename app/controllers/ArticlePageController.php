@@ -1,26 +1,34 @@
 <?php
 
-use Alas\Services\ArticleCreatorService;
+    use Alas\Repo\DbArticleRepo;
+    use Alas\Repo\DbTagsRepo;
+    use Alas\Services\ArticleCreatorService;
 use Alas\Validators\ValidationException;
 
 class ArticlePageController extends \BaseController {
 
-    protected $articleCreator;
+    protected $articleRepo;
 
-    public function __construct(ArticleCreatorService $articleCreator)
+    public function __construct(DbArticleRepo $articleRepo)
     {
-        $this->articleCreator = $articleCreator;
+        $this->articleRepo = $articleRepo;
     }
 
-    public function store()
+    public function index()
     {
-        try {
-            $this->articleCreator->make(Input::all());
-        } catch(ValidationException $e) {
-            return Redirect::back()->withInput()->withErrors($e->getErrors());
-        }
+        $articles = $this->articleRepo->getAll('title',['id','title','content']);
+        return View::make('dashboard.article.index',compact('articles'));
+    }
 
-        return Redirect::home();
+    public function edit($id)
+    {
+
+    }
+
+    public function indexTag($id)
+    {
+        $articles = Tag::find($id)->articles;
+        return View::make('dashboard.article.indextag', compact('articles'));
     }
 
 }

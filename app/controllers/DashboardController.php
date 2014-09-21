@@ -4,7 +4,7 @@ class DashboardController extends \BaseController {
 
 	public function dashboardPage()
 	{
-
+        return View::make('dashboard.page');
 	}
 
 	public function cctvsPage()

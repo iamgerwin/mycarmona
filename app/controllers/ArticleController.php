@@ -66,7 +66,7 @@ class ArticleController extends ApiController {
 	{
 		//
 		$article = Article::find($id);
-
+		return [$article];
 		if(! $article)
 		{
 			return $this->respondNotFound('Article does not exist.');

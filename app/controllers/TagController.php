@@ -1,13 +1,15 @@
 <?php
 
 use Alas\Transformers\TagTransformer;
+use Alas\Transformers\ArticleTransformer;
 
 class TagController extends ApiController {
 	protected $tagTransformer;
 
-	public function __construct(TagTransformer $tagTransformer)
+	public function __construct(TagTransformer $tagTransformer, ArticleTransformer $articleTransformer)
 	{
 		$this->tagTransformer = $tagTransformer;
+		$this->articleTransformer = $articleTransformer;
 	}
 	/**
 	 * Display a listing of the resource.
@@ -15,11 +17,11 @@ class TagController extends ApiController {
 	 *
 	 * @return Response
 	 */
-	public function index($articleId = null)
+	public function index($id = null)
 	{
 		//
-		$tags = $articleId ? Article::find($articleId)->tags : Tag::all();
-
+		$tags = $id ? Tag::find($id)->articles()->get() : '' ;
+		return $tags;
 		return $this->respond([
 				'data' => $this->tagTransformer->transformCollection($tags->all())
 			]);

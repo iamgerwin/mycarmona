@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://ecarmona.dev',
+	'url' => 'http://mycarmona.dev',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -124,6 +124,7 @@ return array(
 
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
+        'Alas\Html\HtmlServiceProvider',
 
 	),
 

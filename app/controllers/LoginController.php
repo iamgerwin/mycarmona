@@ -10,10 +10,10 @@ class LoginController extends \BaseController {
 	 */
 	public function index()
 	{
-		if(! Session::get('login'))
+		if(Auth::guest())
 			return View::make('pages.login');
 
-		return Redirect::route('dashboard.index');
+		return Redirect::route('dashboard.page');
 	}
 
 	/**
@@ -36,7 +36,26 @@ class LoginController extends \BaseController {
 	public function store()
 	{
 		//
-		return Input::all();
+		$rules = [
+            "username" => "required",
+            "password" => "required|min:5"
+        ];
+        $validator = Validator::make(Input::all(),$rules);
+
+        if($validator->fails()) {
+            return Redirect::route('login.index')->withErrors($validator)->withInput(Input::except('password'));
+        } else {
+            $userdata = [
+                "username" => Input::get('username'),
+                "password" => Input::get('password')
+            ];
+
+            if(Auth::attempt($userdata)) {
+                return Redirect::route('dashboard.page');
+            } else {
+                return Redirect::route('login.index');
+            }
+        }
 	}
 
 	/**
@@ -77,14 +96,18 @@ class LoginController extends \BaseController {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /login/{id}
+	 * DELETE /login
 	 *
-	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy()
 	{
-		//
+
 	}
 
+    public function logout()
+    {
+        Session::flush();
+        return Redirect::route('login.index');
+    }
 }
