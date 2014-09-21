@@ -1,4 +1,4 @@
-## myCarmona Web API
+## MyCarmona Web API
 
 STI project for Carmona, Cavite
 Professor Angelo Macha
